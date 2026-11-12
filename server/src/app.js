@@ -14,6 +14,16 @@ app.use(
     crossOriginResourcePolicy: { policy: 'cross-origin' },
   })
 );
+app.use(
+  cors({
+    origin: [
+      'https://career-path-rouge.vercel.app',
+      'http://localhost:5173',
+      process.env.CLIENT_URL
+    ].filter(Boolean),
+    credentials: true
+  })
+);
 
 // 2. Allow CORS from client origin (handling localhost and 127.0.0.1)
 const allowedOrigins = [
