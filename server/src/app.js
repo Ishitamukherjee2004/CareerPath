@@ -20,6 +20,7 @@ const allowedOrigins = [
   process.env.CLIENT_URL || 'http://localhost:5173',
   'http://localhost:5173',
   'http://127.0.0.1:5173',
+  'https://career-path-rouge.vercel.app'
 ];
 
 app.use(
