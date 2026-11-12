@@ -1,0 +1,29 @@
+{
+  "name": "careerpath-server",
+  "version": "1.0.0",
+  "description": "Backend API engine for CareerPath",
+  "main": "src/server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js"
+  },
+  "dependencies": {
+    "@google/generative-ai": "^0.24.1",
+    "bcryptjs": "^3.0.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "express-rate-limit": "^7.2.0",
+    "google-auth-library": "^11.3.3",
+    "helmet": "^7.1.0",
+    "jsonwebtoken": "^9.0.3",
+    "mongoose": "^8.3.1",
+    "multer": "^2.5.0",
+    "pdf2json": "^4.0.3",
+    "zod": "^3.22.4"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0"
+  }
+}
